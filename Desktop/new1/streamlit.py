@@ -6,8 +6,8 @@ import requests
 st.set_page_config(layout="wide")
 
 # CSV dosyalarını oku
-movies = pd.read_csv('tmdb_5000_movies.csv')
-credits = pd.read_csv('tmdb_5000_credits.csv')
+movies = pd.read_csv('Desktop/new1/tmdb_5000_movies.csv')
+credits = pd.read_csv('Desktop/new1/tmdb_5000_credits.csv')
 
 # Streamlit uygulaması
 @st.cache_data
