@@ -36,10 +36,10 @@ def recommend(movie):
         recommended_movies_posters.append(fetch_poster(movie_id))
     return recommended_movies, recommended_movies_posters
 
-movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
+movies_dict = pickle.load(open('Desktop/new1/movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = pickle.load(open('Desktop/new1/similarity.pkl', 'rb'))
 
 st.title("🍿 ReCommendSTAR 🥤📽")
 tabs = st.tabs(["Ana Sayfa", "Model"])
@@ -48,7 +48,7 @@ with tabs[0]:
     column_tanıtım, column_veri = st.columns(2)
     column_tanıtım.subheader(' :red[🎥🎬Film Tavsiye Sistemi  ]')
     column_tanıtım.markdown(" Merhaba Film Tavsiye Sistemine Hoşgeldin. Bugün ne izlemek istersin?")
-    column_tanıtım.image("media/movie.jpg")
+    column_tanıtım.image("Desktop/new1/media/movie.jpg")
 
     column_veri.subheader(" :red[Veri Seti Hakkında] 👩‍💻")
     column_veri.markdown("Yoğun bir haftasonunun ardından senin zevklerini en iyi bilen ReCommendSTAR beğeneceğin filmleri direk sana sunar. "
